@@ -6,6 +6,10 @@ Data Scientist.: Dr. Eddy Giusepe Chirinos Isidro
 Setup:
 
 $ pip install tk-tools
+
+Execução:
+
+$ python 1_App_with_Tkinter.py
 """
 import tkinter as tk
 from tkinter import ttk
