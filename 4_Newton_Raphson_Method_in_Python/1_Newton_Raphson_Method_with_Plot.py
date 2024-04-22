@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""
+Data Scientist.: Dr. Eddy Giusepe Chirinos Isidro
+
+Método de Newton-Raphson com Plot
+================================= 
+"""
 import numpy as np
 from tqdm import tqdm
 import matplotlib.pyplot as plt
