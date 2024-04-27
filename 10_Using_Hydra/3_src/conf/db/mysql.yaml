@@ -1,0 +1,5 @@
+#0 : db=mysql
+db:
+  driver: mysql
+  pass: secret
+  user: omry
