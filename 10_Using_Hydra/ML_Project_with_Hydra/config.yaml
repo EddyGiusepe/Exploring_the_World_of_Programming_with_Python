@@ -1,0 +1,7 @@
+# config.yaml
+data:
+  dataset: '/home/eddygiusepe/1_Eddy_Giusepe/Exploring_the_World_of_Programming_with_Python/10_Using_Hydra/ML_Project_with_Hydra/Housing.csv'
+  target_column: 'price'
+  feature_columns: ['area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'furnishingstatus']
+model:
+  algorithm: 'linear_regression'
