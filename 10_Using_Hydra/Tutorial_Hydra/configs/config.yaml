@@ -1,0 +1,14 @@
+# Dataset configuration
+dataset:
+  image:
+    size: 124
+    channels: 3
+  classes: 10
+
+feature_extractor:
+  _target_: torchvision.models.alexnet
+  pretrained: True
+
+defaults:
+  - config_schema
+  - classifier: small

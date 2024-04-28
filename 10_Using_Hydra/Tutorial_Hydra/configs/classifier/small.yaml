@@ -1,0 +1,9 @@
+dense1:
+  _target_: torch.nn.Linear
+  in_features: 9216
+  out_features: 100
+
+dense2:
+  _target_: torch.nn.Linear
+  in_features: ${classifier.dense1.out_features}
+  out_features: ${dataset.classes}
