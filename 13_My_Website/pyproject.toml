@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "construindo meu website eddygiusepe"
+version = "0.1.0"
+description = "Aqui aprenderemos a construir seu próprio Website. Para este fim usaremos Streamlit com Python."
+authors = ["EddyGiusepe <eddychirinos.unac@gmail.com>"]
+license = "Apache-2.0 license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "1.34.0"
+streamlit-lottie = "0.0.5"
+requests = "2.31.0"
+pillow = "10.3.0"
+protobuf = "4.25.3"
+watchdog = "4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
