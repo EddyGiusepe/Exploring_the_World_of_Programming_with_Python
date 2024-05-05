@@ -1,0 +1,18 @@
+[theme]
+
+# Acento primário para elementos interativos:
+primaryColor = '#E694FF'
+
+# Cor de fundo da área de conteúdo principal:
+backgroundColor = '#273346'
+
+# Cor de fundo da barra lateral e dos widgets mais interativos:
+secondaryBackgroundColor = '#B9F1C0'
+
+# Cor usada para quase todo o texto:
+textColor = '#FFFFFF'
+
+# Font family for all text in the app, except code blocks
+# Accepted values (serif | sans serif | monospace) 
+# Default: "sans serif"
+font = "sans serif"
