@@ -20,7 +20,35 @@ Então, quais são as diferenças.
 
 * Uma `montagem vinculada` no Docker é onde você vincula um diretório dentro do Docker a um diretório em sua máquina host, também conhecido como fora do Docker ou em seu computador.
 
+<font color="red">Pré-requisitos:</font> 
 
+* Docker em teu computador
+
+* Imagem Docker com Database
+
+Aqui, usaremos uma imagem `MySQL`, mas os conceitos funcionarão com qualquer imagem de banco de dados que você queira usar.
+
+# <font color="gree">Vamos na prática</font>
+
+## <font color="pink">Criando um `Volume`</font>
+
+Começamos criando um volume:
+```
+docker volume create mysqlvol 
+```
+Você pode verificar a criação do volume usando os seguintes comandos: `docker volume ls` ou `docker volume list`.
+
+Usando `MySQL`, assim:
+
+* Sem usar o volume:
+```
+docker run -d --name mysql-wvol -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=multiple_regression mysql:latest
+```
+
+* Usando o volume:
+```
+docker run -d --name mysql-wvol -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=multiple_regression --mount source=mysqlvol,target=/var/lib/mysql mysql:latest
+```
 
 
 
