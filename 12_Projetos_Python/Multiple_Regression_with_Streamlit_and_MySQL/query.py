@@ -7,7 +7,7 @@ conn = mysql.connector.connect(
 host="localhost",
 port="3306",
 user="root",
-passwd="123456",
+password="123456",
 db="multiple_regression")
 
 c = conn.cursor()
