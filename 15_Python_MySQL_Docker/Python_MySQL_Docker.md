@@ -52,9 +52,9 @@ e o resultado seria:
 
 ![alt text](image-2.png)
 
+E se fazemos a consulta no `DBeaver`, obtemos:
 
-
-
+![alt text](image-3.png)
 
 
 
