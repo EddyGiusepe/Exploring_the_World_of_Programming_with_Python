@@ -52,7 +52,14 @@ if __name__ == "__main__":
                                     password='123456',
                                     database='DB_projetoSQL'
                                    )
-    meu_resultado = connectionMySQL.executar_consulta("SELECT * FROM minha_tabela")
+    #meu_resultado = connectionMySQL.executar_consulta("SELECT * FROM minha_tabela")
+    #meu_resultado = connectionMySQL.executar_consulta("SELECT * FROM my_dataframe")
+    meu_resultado = connectionMySQL.executar_consulta(
+        """
+        SELECT MIN(index_price) AS minimo, MAX(index_price) AS maximo
+        FROM my_dataframe;
+        """
+    )
     print(f"{YELLOW}{meu_resultado}{RESET}")
     print("")
     print(f"{RED}{meu_resultado[0][1]}{RESET}")
