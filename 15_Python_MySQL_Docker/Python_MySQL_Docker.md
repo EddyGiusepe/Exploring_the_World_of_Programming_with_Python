@@ -40,8 +40,17 @@ conectar com o nosso Banco de Dados `MySQL`. Dessa maneira podemos realizar `que
 DB, `deletar` dados de nosso DB, etc.
 
 
+<font color="red">Exemplo de query</font>
 
+Podemos realizar uma query a nossa Tabela `my_datafrae`, especificamente na coluna `index_price`, para trazer o valor `mínimo` e `máximo` dessa coluna. A query seria a seguinte:
+```
+SELECT MIN(index_price) AS minimo, MAX(index_price) AS maximo
+FROM my_dataframe;
+```
 
+e o resultado seria:
+
+![alt text](image-2.png)
 
 
 
