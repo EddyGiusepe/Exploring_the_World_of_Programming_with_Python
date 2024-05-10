@@ -35,7 +35,9 @@ Vamos adicionar alguns dados a nossa Tabela, lá pela interface mesma do `DBeave
 
 
 # <font color="gree">`4.` Conectar Python ao MySQL</font>
-
+Nesta parte podemos usar um script python (` 2_Encapsulamento_python_com_MySQL.py`), para nos 
+conectar com o nosso Banco de Dados `MySQL`. Dessa maneira podemos realizar `queries` em nosso DB, `inserir` dados a nosso
+DB, `deletar` dados de nosso DB, etc.
 
 
 
