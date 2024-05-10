@@ -163,3 +163,4 @@ cython_debug/
 # EddyGiusepe
 venv_All/
 outputs/
+class_Circle_simples.py
