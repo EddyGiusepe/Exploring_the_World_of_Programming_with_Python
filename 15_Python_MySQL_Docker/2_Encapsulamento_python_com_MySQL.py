@@ -52,6 +52,7 @@ if __name__ == "__main__":
                                     password='123456',
                                     database='DB_projetoSQL'
                                    )
+    
     #meu_resultado = connectionMySQL.executar_consulta("SELECT * FROM minha_tabela")
     #meu_resultado = connectionMySQL.executar_consulta("SELECT * FROM my_dataframe")
     meu_resultado = connectionMySQL.executar_consulta(
