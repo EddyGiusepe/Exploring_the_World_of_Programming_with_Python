@@ -61,6 +61,7 @@ if __name__ == "__main__":
         FROM my_dataframe;
         """
     )
+    
     print(f"{YELLOW}{meu_resultado}{RESET}")
     print("")
     print(f"{RED}{meu_resultado[0][1]}{RESET}")
