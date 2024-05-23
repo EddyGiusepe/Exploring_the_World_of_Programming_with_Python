@@ -164,3 +164,5 @@ cython_debug/
 venv_All/
 outputs/
 class_Circle_simples.py
+user_data/
+.vscode/
