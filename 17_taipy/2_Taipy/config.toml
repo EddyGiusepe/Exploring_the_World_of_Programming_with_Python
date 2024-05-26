@@ -1,0 +1,22 @@
+
+[DATA_NODE.initial_dataset]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.selected_genre_node]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[TASK.genre_filter]
+inputs = [ "selected_genre_node:SECTION", "initial_dataset:SECTION" ]
+outputs = [ "filtered_data:SECTION" ]
+function = ""
+skippable = "False:bool"
+
+[DATA_NODE.filtered_data]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[SCENARIO.scenario]
+additional_data_nodes = [ ]
+tasks = [ "genre_filter:SECTION" ]

@@ -1,0 +1,32 @@
+[TAIPY]
+
+[DATA_NODE.X]
+
+[DATA_NODE.y]
+
+[DATA_NODE.model_name]
+default_data = "MLPClassifier"
+
+[DATA_NODE.model]
+
+[DATA_NODE.fig]
+
+[TASK.fit]
+function = "algos.fit:function"
+inputs = [ "X:SECTION", "y:SECTION", "model_name:SECTION",]
+outputs = [ "model:SECTION",]
+skippable = "True:bool"
+
+[TASK.plot]
+function = "algos.plot:function"
+inputs = [ "X:SECTION", "y:SECTION", "model:SECTION",]
+outputs = [ "fig:SECTION",]
+skippable = "True:bool"
+
+[SCENARIO.scenario]
+tasks = [ "fit:SECTION", "plot:SECTION",]
+additional_data_nodes = []
+
+[SCENARIO.scenario.comparators]
+
+[SCENARIO.scenario.sequences]
