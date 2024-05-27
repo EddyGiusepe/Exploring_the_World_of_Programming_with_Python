@@ -166,3 +166,4 @@ outputs/
 class_Circle_simples.py
 user_data/
 .vscode/
+.env
