@@ -29,6 +29,7 @@ vectorstore = FAISS.from_texts(["Karina é uma experta em Machine Learning.",
                                ],
                                embedding=OpenAIEmbeddings(model="text-embedding-3-small")
 )
+
 retriever = vectorstore.as_retriever()
 template = """Você é um assistente útil que responde as perguntas do Usuário. 
 Use somente as seguintes partes do contexto recuperado para responder à pergunta.
