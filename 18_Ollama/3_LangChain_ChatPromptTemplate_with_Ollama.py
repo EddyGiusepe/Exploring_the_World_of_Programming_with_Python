@@ -41,6 +41,7 @@ em base ao contexto fornecido.
 Pergunta: {question}
 Resposta, apenas, em Português:
 """
+
 prompt = ChatPromptTemplate.from_template(template)
 model = Ollama(model = "phi3:3.8b", temperature=0) # llama2:7b   phi3:3.8b
 
