@@ -167,3 +167,4 @@ class_Circle_simples.py
 user_data/
 .vscode/
 .env
+ml-100k/
