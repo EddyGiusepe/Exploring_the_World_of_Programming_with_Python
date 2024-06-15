@@ -12,7 +12,6 @@ _ = load_dotenv(find_dotenv()) # read local .env file
 #from openai import OpenAI
 #client = OpenAI(api_key=Eddy_key_openai)
 
-
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from langgraph.graph import END, MessageGraph
