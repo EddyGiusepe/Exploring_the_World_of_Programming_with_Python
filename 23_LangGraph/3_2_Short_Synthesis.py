@@ -11,12 +11,6 @@ _ = load_dotenv(find_dotenv()) # read local .env file
 #from openai import OpenAI
 #client = OpenAI(api_key=Eddy_key_openai)
 
-# Usando LangSmith:
-LANGCHAIN_TRACING_V2="true"
-LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"  # Eddy ---> https://smith.langchain.com/o/fc23d72c-9360-5a5f-affa-26c44b810011
-LANGCHAIN_API_KEY="sua Key para o LangSmith"
-LANGCHAIN_PROJECT="LangGraph_EddyGiusepe"
-
 
 import asyncio
 from langgraph.graph import END, MessageGraph
