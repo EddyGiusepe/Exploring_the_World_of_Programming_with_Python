@@ -124,7 +124,7 @@ async def process_pdf(file: UploadFile = File(...)):
 
     # Função para gerar respostas:
     async def stream_responses():
-        #last_content = None
+        # last_content = None
         async for event in graph.astream([HumanMessage(content=text)]):
             if 'generate' in event:
                 last_content = event['generate'].content # Armazena o 'content' da mensagem 'generate'
