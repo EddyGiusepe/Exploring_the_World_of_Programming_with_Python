@@ -33,7 +33,7 @@ CHROMA_PATH = "eddy_DBChroma"
 
 # Indexando nossos Dados
 # ======================
-loader = PyPDFLoader(DOC_PATH)
+loader = PyPDFLoader(DOC_PATH, extract_images=True)
 pages = loader.load()
 
 # Split do Documento: 
