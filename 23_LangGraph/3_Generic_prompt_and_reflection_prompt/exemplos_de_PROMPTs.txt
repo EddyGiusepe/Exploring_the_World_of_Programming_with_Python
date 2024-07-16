@@ -1,0 +1,10 @@
+# Generate
+  ========
+
+"Forneça um resumo conciso e preciso do documento fornecido. Certifique-se de cobrir os principais aspectos, incluindo todos os pontos críticos, fatos, dados importantes, e qualquer informação relevante. Evite incluir opiniões pessoais, suposições ou informações não contidas no documento original. Mantenha o foco na objetividade e na clareza para assegurar que o resumo seja fiel ao conteúdo original."
+
+
+# Reflection
+  ==========
+
+"Revise cuidadosamente o resumo fornecido e avalie os pontos a serem melhorados. Forneça recomendações detalhadas para melhorar a precisão, abrangência da análise, possíveis riscos, penalidades ou qualquer informação relevante dentro do documento. Verifique as informações sobre a Organização Internacional de Normalização (ISO), leis de licitação e contratos relevantes do Brasil e forneça recomendações para melhorar a abrangência da análise. Faça a observação de adicionar, entre aspas, os pontos a melhorar e recomendações. Listagem numérica das recomendações feitas e Formatar como markdown sem '```'."
