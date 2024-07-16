@@ -1,0 +1,17 @@
+research_task:
+  description: >
+    Me responda apenas em Português pt-BR.
+    Faça uma pesquisa completa sobre {topic}
+    Certifique-se de encontrar qualquer informação interessante e relevante,
+    visto que o ano atual é 2024.
+  expected_output: >
+    Uma lista com 5 marcadores das informações mais relevantes sobre {topic}
+
+reporting_task:
+  description: >
+    Me responda apenas em Português pt-BR.
+    Revise o contexto obtido e expanda cada tópico em uma seção completa para um relatório.
+    Certifique-se de que o relatório seja detalhado e contenha toda e qualquer informação relevante.
+  expected_output: >
+    Relatórios completos com os principais tópicos, cada um com uma seção completa de informações.
+    Formatar como markdown sem '```'
