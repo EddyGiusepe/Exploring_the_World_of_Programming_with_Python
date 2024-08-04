@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
 Data Scientist.: Dr. Eddy Giusepe Chirinos Isidro
+
+Este script resume um PDF em vários parágrafos e motiva a seguir
+a rede social do escritor
 """
 from dotenv import load_dotenv
 from crewai import Agent, Task, Crew, Process
@@ -85,23 +88,27 @@ cta_integrator = Agent(
 def pdf_reading_task(pdf_url):
     return Task(
         description=f"Leia e pré-processe o texto do PDF desta URL: {pdf_url}",
-        agent=pdf_reader
+        agent=pdf_reader,
+        expected_output="O texto processado ou extraído do PDF."
     )
 # 5.2 Tarefa que escreve o artigo:
 task_article_drafting = Task(
     description="Crie um artigo conciso com 4 ou 6 parágrafos com base no conteúdo extraído do PDF.",
-    agent=article_writer
+    agent=article_writer,
+    expected_output="Um resumo de 4 ou 6 parágrafos."
 )
 # 5.3 Tarefa que cria o Título:
 task_title_generation = Task(
     description="Crie um título envolvente e relevante para o artigo.",
-    agent=title_creator
+    agent=title_creator,
+    expected_output="O título deve ser interessante e que faça sentido com a escrita do artigo."
 )
-# 5.4 Tarefa que
+# 5.4 Tarefa que incentiva a seguir no Twitter:
 def task_cta_addition(twitter_url):
     return Task(
-        description=f"Incluir uma chamada para ação no final do artigo, incentivando os leitores a seguir esta conta do Twitter: {twitter_url}",
-        agent=cta_integrator
+        description=f"Incluir uma chamada para ação no final do artigo, incentivando os leitores a seguir esta conta do Facebook: {twitter_url}",
+        agent=cta_integrator,
+        expected_output="Motivando a seguir a conta do Facebook "
     )
 
 # 6. Entradas do Usuário:
@@ -117,25 +124,8 @@ crew = Crew(
 
 # 8. Execute o crew:
 result = crew.kickoff()
-
+print(f"🤗🤗🤗{result}🤗🤗🤗")
 # 9. Combinar resultados:
-final_article = f"{task_title_generation.output.result}\n\n{task_article_drafting.output.result}\n\nSiga me no Facebook: {twitter_url}"
+#final_article = f"{task_title_generation.output.result}\n\n{task_article_drafting.output.result}\n\nSiga me no Facebook: {twitter_url}"
 print("--------------------------")
-print(final_article)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#print(final_article)
