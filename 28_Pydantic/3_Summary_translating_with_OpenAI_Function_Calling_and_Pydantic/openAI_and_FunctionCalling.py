@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
 Data Scientist.: Dr. Eddy Giusepe Chirinos Isidro
+
+Sumarização - Tradução - Tom - Sentimento - Idioma
+==================================================
+Neste script usamos a API da OpenAI para sumarizar e traduzir
+um texto. Ademais, pedimos ao LLM inferir outras saídas. 
 """
 import json
 
