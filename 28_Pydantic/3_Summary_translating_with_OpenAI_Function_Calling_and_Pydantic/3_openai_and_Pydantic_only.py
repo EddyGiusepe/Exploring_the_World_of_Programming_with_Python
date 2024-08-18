@@ -34,6 +34,7 @@ completion = client.beta.chat.completions.parse(
 
 
 event = completion.choices[0].message.parsed
+
 print(type(event))
 print(event)
 print("")
