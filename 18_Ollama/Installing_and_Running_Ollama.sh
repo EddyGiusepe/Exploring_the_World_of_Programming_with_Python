@@ -10,3 +10,5 @@ ollama serve
 # Dar permissão --> chmod +x Installing_and_Running_Ollama.sh
 # ollama pull phi3:3.8b
 # ollama pull llama2:7b
+# ollama list
+# ollama run llama3.1:8b
