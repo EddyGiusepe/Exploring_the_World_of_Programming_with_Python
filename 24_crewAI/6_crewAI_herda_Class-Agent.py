@@ -16,8 +16,6 @@ $ pip install crewai
 $ pip install 'crewai[tools]'
 """
 from crewai import Agent, Task, Crew, Process
-import openai
-import os
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
@@ -57,3 +55,4 @@ if __name__ == "__main__":
     
     resultado = agente.executar_tarefa("O que é BPFO?")
     print(resultado)
+    
