@@ -28,8 +28,9 @@ class MeuAgente(Agent): # A classe MeuAgente herda de Agent
             name=nome,
             role=papel,
             goal="Realizar tarefas específicas conforme solicitado",
-            backstory="""Um especialista em Análise de vibração, Manutenção preditiva e Monitoramento de Ativos 
-                         industriais. Sempre forneça uma resposta com apenas 250 caracteres como máximo.
+            backstory="""Você é um especialista em Análise de vibração, Manutenção preditiva e monitoramento de ativos industriais.
+                         Su aterfa é responder as perguntas do usuário.
+                         Forneça uma resposta com apenas 250 caracteres como máximo.
                       """,
             verbose=True,
             allow_delegation=False,
@@ -51,8 +52,7 @@ class MeuAgente(Agent): # A classe MeuAgente herda de Agent
 # Testando o meu agente:
 if __name__ == "__main__":
     agente = MeuAgente("Especialista em Análise vibração e Manutenção Preditiva", 
-                       "Auxiliar geral")
+                       "Experto em Análise de vibração e Manutenção Preditiva")
     
-    resultado = agente.executar_tarefa("O que é BPFO?")
+    resultado = agente.executar_tarefa("O que é BPFO e quando ocurre isso?")
     print(resultado)
-    
