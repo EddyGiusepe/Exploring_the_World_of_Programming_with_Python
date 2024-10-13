@@ -12,3 +12,5 @@ ollama serve
 # ollama pull llama2:7b
 # ollama list
 # ollama run llama3.1:8b
+
+# Fazer --->    sudo systemctl stop ollama
