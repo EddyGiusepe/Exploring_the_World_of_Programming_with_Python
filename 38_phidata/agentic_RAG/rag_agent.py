@@ -15,6 +15,7 @@ $ pip install lancedb
 """
 from phi.agent import Agent
 from phi.model.openai import OpenAIChat
+from phi.embedder.openai import OpenAIEmbedder
 from phi.knowledge.pdf import PDFUrlKnowledgeBase
 from phi.vectordb.lancedb import LanceDb, SearchType
 from phi.playground import Playground, serve_playground_app
@@ -35,7 +36,12 @@ db_uri = "tmp/lancedb"
 # Crie uma base de conhecimento a partir de um PDF:
 knowledge_base = PDFUrlKnowledgeBase(urls=["https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"], #"https://phi-public.s3.amazonaws.com/recipes/ThaiRecipes.pdf"
                                      # Use LanceDB como banco de dados vetorial:
-                                     vector_db=LanceDb(table_name="paper-of-Attention", uri=db_uri, search_type=SearchType.vector, distance="cosine"),
+                                     vector_db=LanceDb(table_name="paper-of-Attention",
+                                                       uri=db_uri,
+                                                       search_type=SearchType.vector,
+                                                       distance="cosine",
+                                                       embedder=OpenAIEmbedder(model="text-embedding-3-small")
+                                                      ),
                                     )
 
 # Carregar a base de conhecimento: Comente após a primeira execução:
