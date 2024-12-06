@@ -14,4 +14,6 @@ ollama serve
 # ollama list
 # ollama run llama3.1:8b
 
+# ollama show llama3.2-vision:11b   <--- para ver as configurações do modelo (quantidade de camadas, etc)
+
 # Fazer --->    sudo systemctl stop ollama
