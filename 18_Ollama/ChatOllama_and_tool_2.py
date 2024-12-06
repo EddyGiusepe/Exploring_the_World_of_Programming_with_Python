@@ -15,7 +15,7 @@ Inicialize o 'ollama serve' antes de executar o script
 from langchain_ollama import ChatOllama
 
 llm = ChatOllama(
-    model="llama3.1:8b", # llama3.1:8b    ou    phi3:3.8b
+    model="llama3.2:3b", # llama3.1:8b    ou    phi3:3.8b   ou   llama3.2:3b
     temperature=0,
     # other params...
 )
@@ -23,11 +23,13 @@ llm = ChatOllama(
 messages = [
     (
         "system",
-        """Você é um assistente útil que traduz inglês para francês.
-           Traduza a frase do usuário:
+        """Você é especialista em análise de vibração, manutenção preditiva e monitoramento de ativos industriais.
         """,
     ),
-    ("human", "I love Machine Learning and Deep Learning."),
+    ("human",
+     """
+     O que é a Transformada de Fourier e para que serve na Manutenção Preditiva?
+     """),
 ]
 
 ai_msg = llm.invoke(messages)
