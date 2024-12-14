@@ -14,10 +14,10 @@ analyzer = Qwen2VLAnalyzer(model_size="2B", device="cuda")
 
 # Preparar entrada da imagem
 image_input = ImageInput(
-    file_path=Path("/home/eddygiusepe/2_EddyGiusepe_Estudo/Exploring_the_World_of_Programming_with_Python/41_Multimodal_Embeddings_images-audio-video/images/placa_motor_monofasico.JPG")
+    file_path=Path("/home/eddygiusepe/2_EddyGiusepe_Estudo/Exploring_the_World_of_Programming_with_Python/41_Multimodal_Embeddings_Ollama-Vision/images/placa_Motor_ROTADA.jpg")
 )
 
 # Fazer a análise:
-query = "Extraia, APENAS, o tipo de motor."
+query = "Qual é a marca e o peso do motor?" #"Extraia, APENAS, o tipo de motor."
 resultado = analyzer.analyze_image(image_input, query)
 print(resultado)
