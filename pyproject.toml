@@ -1,0 +1,20 @@
+[project]
+name = "exploring-the-world-of-programming-with-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "devtools>=0.12.2",
+    "ipykernel>=6.29.5",
+    "logfire>=3.8.1",
+    "nest-asyncio>=1.6.0",
+    "pydantic-ai>=0.0.39",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+]
