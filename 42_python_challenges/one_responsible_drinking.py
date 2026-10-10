@@ -2,9 +2,9 @@
 """
 Senior Data Scientist/AI Engineering.: Dr, Eddy Giusepe Chirinos Isidro
 
------------------------
-Descrição do Problema:
------------------------
+-----------------------------------------------
+Descrição do Problema: One Responsible Drinking
+-----------------------------------------------
 Seus colegas programadores te compraram várias bebidas esta noite na forma de uma string.
 Retorne uma string sugerindo quantos copos d'água você deve beber para não ter ressaca.
 
