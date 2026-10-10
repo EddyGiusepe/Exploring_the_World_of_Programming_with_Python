@@ -1,0 +1,21 @@
+# Python version
+target-version = "py313"
+
+# Line length
+line-length = 120
+
+# Exclude directories
+exclude = [
+    ".git",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+    "migrations",
+    "node_modules",
+]
+
+# Linting rules
+[lint]
+select = ["E", "F", "I", "N", "W", "B", "C4", "UP", "PL", "RUF"]
