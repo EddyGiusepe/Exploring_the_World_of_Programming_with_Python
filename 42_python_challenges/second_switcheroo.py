@@ -2,9 +2,9 @@
 """
 Senior Data Scientist/AI Engineering.: Dr. Eddy Giusepe Chirinos Isidro
 
------------------------
-Descrição do Problema:
------------------------
+---------------------------------
+Descrição do Problema: Switcheroo
+---------------------------------
 Dada uma string composta pelas letras a, b e/ou c,
 troque a posição das letras a e b (mude a para b e vice-versa).
 Qualquer ocorrência de c deve ser mantida sem alteração.
