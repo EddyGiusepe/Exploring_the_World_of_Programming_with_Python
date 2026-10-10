@@ -20,6 +20,8 @@ Observação:
     quantidade de drinques padrão, independente do tipo da bebida.
     (ex: "2 beers" = 2 drinques padrão, "1 shot" = 1 drinque padrão)
 """
+
+
 def hydrate(drink_string: str) -> str:
 
     part = ""
@@ -27,14 +29,12 @@ def hydrate(drink_string: str) -> str:
     for i in drink_string:
         if i.isdigit():
             part = part + i
-        elif part:
+        elif part:  # "Se NÃO é dígito (else) E part não está vazio (if part)"
             done.append(int(part))
             part = ""
-
 
     return f"{sum(done)} glass{'es' if sum(done) != 1 else ''} of water"
 
 
-
 if __name__ == "__main__":
-    print(hydrate("1 beer")) # "1 beer, 2 drinks, 3 beers"
+    print(hydrate("1 beer 2 drinks"))  # "1 beer, 2 drinks, 3 beers"
