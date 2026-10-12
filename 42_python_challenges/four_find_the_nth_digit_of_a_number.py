@@ -2,9 +2,6 @@
 """
 Senior Data Scientist/AI Engineering.: Dr. Eddy Giusepe Chirinos Isidro
 
-https://www.facebook.com/share/v/1Edeqzskx4/
-
-
 -----------------------------------------------------
 Descrição do Problema: Find the nth Digit of a Number
 -----------------------------------------------------
@@ -24,11 +21,12 @@ Exemplos:
     -456,  4  -->  0
     0,     20 -->  0
 """
+
+
 def find_digit(num: int, nth: int) -> int:
     if nth <= 0:
         return -1
     return abs(num) // 10 ** (nth - 1) % 10
-
 
 
 if __name__ == "__main__":
